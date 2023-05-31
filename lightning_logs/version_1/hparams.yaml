@@ -1,0 +1,50 @@
+config: !!python/object/new:easydict.EasyDict
+  dictitems:
+    alpha: 0.5
+    arch: selectivenet
+    batch_size: 64
+    coverage: 0.9
+    cutmix_beta: 1
+    cutmix_prob: 0.5
+    dataset: CIFAR-100
+    dropout: 0.0
+    epoch: 125
+    gamma: 0.5
+    hidden_state: 512
+    in_channels: 3
+    label_smoothing: 0.1
+    lr: 0.1
+    min_lr: 1.0e-06
+    mode: selective
+    momentum: 0.9
+    num_classes: 100
+    optimizer: SGD
+    step: 10
+    warmup: 5
+    weight_decay: 0.0005
+    workers: 4
+  state:
+    alpha: 0.5
+    arch: selectivenet
+    batch_size: 64
+    coverage: 0.9
+    cutmix_beta: 1
+    cutmix_prob: 0.5
+    dataset: CIFAR-100
+    dropout: 0.0
+    epoch: 125
+    gamma: 0.5
+    hidden_state: 512
+    in_channels: 3
+    label_smoothing: 0.1
+    lr: 0.1
+    min_lr: 1.0e-06
+    mode: selective
+    momentum: 0.9
+    num_classes: 100
+    optimizer: SGD
+    step: 10
+    warmup: 5
+    weight_decay: 0.0005
+    workers: 4
+len_train: 50000

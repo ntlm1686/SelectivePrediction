@@ -1,0 +1,35 @@
+arch: selectivenet
+dropout: 0.0
+in_channels: 3
+hidden_state: 512
+
+# criterion
+label_smoothing: 0.1
+
+# datasets
+num_classes: 100
+dataset: CIFAR-100
+workers: 4
+
+mode: selective # or default
+coverage: 1.0
+alpha: 0.5
+
+# training
+epoch: 125
+batch_size: 64
+warmup: 5
+
+# optimizer
+optimizer: SGD
+lr: 0.1
+min_lr: 0.000001
+momentum: 0.9
+weight_decay: 0.0005
+
+# scheduler
+step: 10
+gamma: 0.5
+
+cutmix_beta: 1
+cutmix_prob: 0.5
